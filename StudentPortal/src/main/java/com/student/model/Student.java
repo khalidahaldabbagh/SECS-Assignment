@@ -37,6 +37,7 @@ public class Student {
         populateStudentId();
     }
 
+    // give random studentId
     public void populateStudentId() {
         if (this.studentId == null) {
             this.studentId = "c" +
