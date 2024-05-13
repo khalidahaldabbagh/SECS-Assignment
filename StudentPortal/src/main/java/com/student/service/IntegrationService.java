@@ -34,7 +34,7 @@ public class IntegrationService {
 
     public void notifyStudentCreated(@NotNull Account account) {
         restTemplate.postForObject(financeHost + studentCreatedFinanceSubscriber, account, Account.class);
-        restTemplate.postForObject(libraryHost + studentCreatedLibrarySubscriber, account, Account.class);
+//        restTemplate.postForObject(libraryHost + studentCreatedLibrarySubscriber, account, Account.class);
     }
 
     public Invoice createCourseFeeInvoice(@NotNull Invoice invoice) {
